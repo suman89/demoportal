@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "stores"("id" bigserial NOT NULL, "owner" bigint NOT NULL, "type"
+      text NOT NULL, "address" text NOT NULL, "desc" text NOT NULL, PRIMARY KEY ("id")
+      )
+  type: run_sql
+- args:
+    name: stores
+  type: add_existing_table_or_view
